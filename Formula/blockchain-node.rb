@@ -2,14 +2,14 @@
 class BlockchainNode < Formula
   desc "Proof-of-Stake blockchain node with terminal UI"
   homepage "https://github.com/M-Maksym/blockchain-pos"
-  version "1.0.1"
+  version "1.0.2"
 
   depends_on "node"
 
   on_macos do
     on_intel do
       url "https://github.com/M-Maksym/blockchain-pos-releases/releases/download/v#{version}/blockchain-node-macos-x64-v#{version}.tar.gz"
-      sha256 "ade05925a859215ba32705e76e938b515012dc80d4ab3ff8ea6a586df72bd419"
+      sha256 "ac2649d6f8d5278b501a4517872a577ae33e866fa49e16a89d3d0adfd49cbb30"
     end
   end
 
