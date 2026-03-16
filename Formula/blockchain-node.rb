@@ -1,17 +1,14 @@
-# This file is a template — SHA256 hashes are filled automatically by update-formula.mjs after release
+# SHA256 is updated automatically by scripts/update-formula.mjs after each release
 class BlockchainNode < Formula
   desc "Proof-of-Stake blockchain node with terminal UI"
   homepage "https://github.com/M-Maksym/blockchain-pos"
-  version "1.0.2"
+  version "1.0.3"
 
   depends_on "node"
+  depends_on :macos
 
-  on_macos do
-    on_intel do
-      url "https://github.com/M-Maksym/blockchain-pos-releases/releases/download/v#{version}/blockchain-node-macos-x64-v#{version}.tar.gz"
-      sha256 "ac2649d6f8d5278b501a4517872a577ae33e866fa49e16a89d3d0adfd49cbb30"
-    end
-  end
+  url "https://github.com/M-Maksym/blockchain-pos-releases/releases/download/v#{version}/blockchain-node-macos-v#{version}.tar.gz"
+  sha256 "871cc2383e773e6f9cbd45502f755affce75f76089adcf1c542093fb4208faf3"
 
   def install
     libexec.install "app.mjs"
