@@ -14,8 +14,8 @@ class BlockchainNode < Formula
   end
 
   def install
-    libexec.install "release/app.mjs"
-    libexec.install "release/node_modules"
+    libexec.install "app.mjs"
+    libexec.install "node_modules"
 
     (bin/"blockchain-node").write <<~SH
       #!/bin/bash
