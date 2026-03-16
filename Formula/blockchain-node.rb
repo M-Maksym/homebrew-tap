@@ -9,7 +9,7 @@ class BlockchainNode < Formula
   on_macos do
     on_intel do
       url "https://github.com/M-Maksym/blockchain-pos-releases/releases/download/v#{version}/blockchain-node-macos-x64-v#{version}.tar.gz"
-      sha256 "5849c52c61cd4c6d161d759bf3964474c99ccac3a4828805158afdf6396603cb"
+      sha256 "ade05925a859215ba32705e76e938b515012dc80d4ab3ff8ea6a586df72bd419"
     end
   end
 
