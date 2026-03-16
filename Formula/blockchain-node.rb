@@ -2,7 +2,7 @@
 class BlockchainNode < Formula
   desc "Proof-of-Stake blockchain node with terminal UI"
   homepage "https://github.com/M-Maksym/blockchain-pos"
-  version "1.0.0"
+  version "1.0.1"
 
   depends_on "node"
 
@@ -16,6 +16,7 @@ class BlockchainNode < Formula
   def install
     libexec.install "app.mjs"
     libexec.install "node_modules"
+    libexec.install "contracts"
 
     (bin/"blockchain-node").write <<~SH
       #!/bin/bash
