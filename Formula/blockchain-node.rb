@@ -19,7 +19,7 @@ class BlockchainNode < Formula
 
     (bin/"blockchain-node").write <<~SH
       #!/bin/bash
-      exec node "#{libexec}/app.mjs" "$@"
+      exec "#{Formula["node"].opt_bin}/node" "#{libexec}/app.mjs" "$@"
     SH
   end
 
