@@ -2,13 +2,13 @@
 class BlockchainNode < Formula
   desc "Proof-of-Stake blockchain node with terminal UI"
   homepage "https://github.com/M-Maksym/blockchain-pos"
-  version "1.0.3"
+  version "1.1.0"
 
   depends_on "node"
   depends_on :macos
 
   url "https://github.com/M-Maksym/blockchain-pos-releases/releases/download/v#{version}/blockchain-node-macos-v#{version}.tar.gz"
-  sha256 "871cc2383e773e6f9cbd45502f755affce75f76089adcf1c542093fb4208faf3"
+  sha256 "4e928b5a0255aed4aca49dc2433e2c0d5a3d4826c673ed1cb54e709ad6079882"
 
   def install
     libexec.install "app.mjs"
